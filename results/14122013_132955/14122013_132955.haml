@@ -1,0 +1,55 @@
+!!!
+%html
+  %head
+    %title MockLifing
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    / Bootstrap
+    %link{href: "../../css/bootstrap.min.css", rel: "stylesheet"}/
+    / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    / WARNING: Respond.js doesn't work if you view the page via file://
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  %body
+    %form.form-horizontal
+      %fieldset
+        / Form Name
+        %legend Sign UP
+        / Text input
+        .form-group
+          %label.col-md-4.control-label{for: "name"} Name
+          .col-md-4
+            %input#name.form-control.input-md{name: "name", placeholder: "", type: "text"}/
+        / Text input
+        .form-group
+          %label.col-md-4.control-label{for: "email"} Email
+          .col-md-4
+            %input#email.form-control.input-md{name: "email", placeholder: "", type: "text"}/
+        / Password input
+        .form-group
+          %label.col-md-4.control-label{for: "pass"} Password
+          .col-md-4
+            %input#pass.form-control.input-md{name: "pass", placeholder: "", type: "password"}/
+        / Password input
+        .form-group
+          %label.col-md-4.control-label{for: "repass"} Re-type password
+          .col-md-4
+            %input#repass.form-control.input-md{name: "repass", placeholder: "", type: "password"}/
+        / Multiple Checkboxes
+        .form-group
+          %label.col-md-4.control-label{for: "agree"}
+          .col-md-4
+            .checkbox
+              %label{for: "agree-0"}
+                %input#agree-0{name: "agree", type: "checkbox", value: "1"}/
+                I agree to the Terms of Use
+        / Button (Double)
+        .form-group
+          %label.col-md-4.control-label{for: "signup"}
+          .col-md-8
+            %button#signup.btn.btn-primary{name: "signup"} Sign Up
+            %button#more.btn.btn-inverse{name: "more"} Learn more
+    / jQuery (necessary for Bootstrap's JavaScript plugins)
+    %script{src: "https://code.jquery.com/jquery.js"}
+    / Include all compiled plugins (below), or include individual files as needed
+    %script{src: "js/bootstrap.min.js"}
