@@ -1,1 +1,1 @@
-MockLifing project
+MockLifing project repository
